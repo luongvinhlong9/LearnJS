@@ -1,0 +1,47 @@
+/*
+Array{
+    forEach: vòng lặp tất cả các giá trị trong mảng
+
+    every: kiem tra tat ca phan tu cung thuoc dieu kien nao do hay k. return true/false
+    ex: arrays.every(function(array){return điều kiện})
+
+    some: kiểm tra xem có ít nhất 1 phần tử thuộc điều kiện nào đó hay k. return true/false
+    ex: arrays.every(function(array){return điều kiện})
+
+    find: tìm phần tử trong mảng thỏa điều kiện đã cho. return phần tử đó (trả đối tượng đầu tiên tìm dc)
+    ex: arrays.every(function(array){return điều kiện})
+
+    filter: tìm phần tử trong mảng thỏa điều kiện đã cho. return phần tử đó (trả tất cả đối tượng tìm dc)
+    ex: arrays.every(function(array){return điều kiện})
+    
+    map: sao ra 1 mảng mới, có thể tiến hành return để chỉnh sửa lại mảng mới đó
+    ex: arrays.every(function(array){return {Các phần tử và chỉnh sửa phù hợp}})
+    detail ex:
+            array.every(function(array{
+                return{
+                    element1: array.element1;
+                    element2: array.element2;
+                    element3: array.element3;
+                }
+            }))
+
+    reduce: tính tổng phần tử, lamf phẳng mảng,....
+    ex:
+        var testArray = courses.reduce(function(total, currenrValue){
+            return total+currenrValue.coin;
+        },0)
+
+    include: phương thức của string và array =>return true/false
+        với string: kiểm tra xem trong chuỗi ban đầu có tồn tại chuỗi nào đó hay k
+        ex: var title = 'luong vinh long';
+        console.log(title.include('long')); =>true
+        tham số 1, chuỗi cần dò, tham số 2, vị trí bắt đầu dò
+
+        với array: kiểm tra xem trong array ban đầu có tồn tại phần tử nào đó hay k
+        nếu truyền tham số thứ 2 là số âm, vị trí bắt đầu dò bằng length()+tham số 2
+        nếu tham số 2 + length() <0 mặc định vị trí bắt đầu là 0
+
+
+
+
+*/
