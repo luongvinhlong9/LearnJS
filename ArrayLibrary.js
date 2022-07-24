@@ -23,7 +23,7 @@ Array.prototype.filter2= function(callBack){
     for(var index in this){
         var result = callBack(this[index],index)
         if(result)
-            output.push(this[i]);
+            output.push(this[index]);
     }
     return output;
 }
@@ -64,7 +64,16 @@ var courses = [
 ];
 
 function callBack(course){
-    return course==='Java';
+    console.log(course);
 }
 
-console.log(courses.filter2(callBack));
+Array.prototype.forEach2 = function(callBack){
+    for(var index in this){
+        if(this.hasOwnProperty(index)) //ham kiem tra trong array co phai phan tu thuc hay k
+            callBack(this[index]);
+    }
+}
+
+courses.forEach2(callBack);
+
+
